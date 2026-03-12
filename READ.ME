@@ -1,0 +1,24 @@
+Um simples projeto de estudo com intuito de implementar Arquitetura Hexagonal da forma mais limpa e simples possível, separando as camadas de forma lógica mas com o mínimo de código boilerplate possível. 
+O projeto consiste em uma API para consulta de dados da blockchain do Bitcoin.
+
+Estrutura de pastas:
+
+/adapter = Possui todos os adaptadores de entrada e saída  (Controllers, Repositories, e FeignClient)
+
+/application = Resolvi separar utilitários de domínio da lógica de domínio por isso contém useCase e domain
+
+/port = Portas de entrada e saída dos adaptadores
+
+
+Tecnologias:
+
+Java 17
+
+Spring Boot 
+
+Spring Web
+
+Spring Cloud OpenFeign (Integração com API de terceiros)
+
+Lombok (Produtividade, uso de anotações para substituição de código repetitivo)
+
