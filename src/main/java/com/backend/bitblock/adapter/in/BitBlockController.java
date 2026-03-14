@@ -17,6 +17,7 @@ public class BitBlockController implements ISwaggerBitBlockController {
 
     public final IBlockStatusUseCase useCase;
 
+    @Override
     @GetMapping("/status")
     public ResponseEntity<BlockStatus> getStatus() {
         return ResponseEntity.ok(useCase.obterStatusAtual());
