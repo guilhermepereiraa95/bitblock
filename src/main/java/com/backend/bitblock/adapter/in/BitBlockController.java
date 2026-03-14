@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/v1/bitcoin")
-public class BitBlockController {
+public class BitBlockController implements ISwaggerBitBlockController {
 
     public final IBlockStatusUseCase useCase;
 
